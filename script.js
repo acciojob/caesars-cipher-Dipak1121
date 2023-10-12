@@ -34,12 +34,12 @@ const lookup = {
 function rot13(str) {
 	let output = "";
 	str = str.toUpperCase();
-	for ( let i = 0; i < mystr; i++ ){
-		if ( lookup[mystr[i]] != undefined ){
+	for ( let i = 0; i < str.length; i++ ){
+		if ( lookup[str[i]] != undefined ){
 			output += lookup[str[i]];
 		}
 		else{
-			output += mystr[i];
+			output += str[i];
 		}
 	}
   return output; //return decodedArr
